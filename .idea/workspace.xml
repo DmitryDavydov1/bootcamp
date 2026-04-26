@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4bd132bb-a879-4961-a0af-283cd354de94" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/pythonProject3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/data_upload.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/recommendations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/anomalies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/history.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/ratings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/scoring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/shelves.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/schemas/upload.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/dataset_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/recommendation_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/upload_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/storage/uploads/ctr-kinolenta.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/storage/uploads/title-kinolenta.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/eslint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/public/favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/public/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/api/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/assets/hero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/assets/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/assets/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/components/Results.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/components/UploadPanel.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/pages/Dashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3CtMqqwNKXdl95Hdw1gpYbhqxuU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.recommendation_service.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "D:/node/node",
+    "settings.editor.selected.configurable": "settings.javascript.runtime",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2026.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\recomendation_system\pythonProject3\src" />
+      <recent name="C:\Users\user\recomendation_system\pythonProject3\app" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="pythonProject3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-b63d5a1f7c97-b61e75351b1f-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.22158.340" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bd132bb-a879-4961-a0af-283cd354de94" name="Changes" comment="" />
+      <created>1777200606582</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777200606582</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/api/recommendations.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
