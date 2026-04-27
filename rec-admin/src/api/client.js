@@ -14,3 +14,11 @@ export const uploadFile = (file) => {
 export const generateReport = () => {
   return api.post("/api/recommendations/generate");
 };
+
+export const getCurrentTop = () => {
+  return api.get("/api/recommendations/current-top");
+};
+
+export const saveCurrentTop = (data) => {
+  return api.post("/api/recommendations/current-top", data);
+};
