@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bd132bb-a879-4961-a0af-283cd354de94" name="Changes" comment="add generate report">
-      <change afterPath="$PROJECT_DIR$/app/services/current_top_service.py" afterDir="false" />
+    <list default="true" id="4bd132bb-a879-4961-a0af-283cd354de94" name="Changes" comment="add save top">
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/pages/CurrentTop.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/recommendations.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/recommendations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rec-admin/src/api/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/api/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rec-admin/src/components/Results.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/Results.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/SortableItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/SortableItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/SortableShelf.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/SortableShelf.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/UploadPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/UploadPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/pages/Dashboard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777290563983</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add save top">
+      <option name="closed" value="true" />
+      <created>1777291842758</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1777291842758</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +147,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add generate report" />
-    <option name="LAST_COMMIT_MESSAGE" value="add generate report" />
+    <MESSAGE value="add save top" />
+    <option name="LAST_COMMIT_MESSAGE" value="add save top" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

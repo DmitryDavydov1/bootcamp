@@ -1,8 +1,4 @@
-import {
-  DndContext,
-  closestCenter,
-} from "@dnd-kit/core";
-
+import { DndContext, closestCenter } from "@dnd-kit/core";
 import {
   SortableContext,
   verticalListSortingStrategy,
@@ -11,47 +7,51 @@ import {
 
 import SortableItem from "./SortableItem";
 
-export default function SortableShelf({
-  title,
-  items,
-  setItems,
-}) {
+export default function SortableShelf({ title, items = [], setItems }) {
+  const itemsWithIds = items.map((item, index) => ({
+    ...item,
+    sortableId: `${title}-${index}-${item.title}`,
+  }));
+
   const handleDragEnd = (event) => {
     const { active, over } = event;
 
     if (!over || active.id === over.id) return;
 
-    const oldIndex = items.findIndex(
-      (item) => item.title === active.id
+    const oldIndex = itemsWithIds.findIndex(
+      (item) => item.sortableId === active.id
     );
 
-    const newIndex = items.findIndex(
-      (item) => item.title === over.id
+    const newIndex = itemsWithIds.findIndex(
+      (item) => item.sortableId === over.id
     );
 
     setItems(arrayMove(items, oldIndex, newIndex));
   };
 
   return (
-    <div style={{ marginBottom: 40 }}>
-      <h2>{title}</h2>
+    <section className="shelf">
+      <div className="shelf-header">
+        <h3>{title}</h3>
+        <span>{items.length} items</span>
+      </div>
 
-      <DndContext
-        collisionDetection={closestCenter}
-        onDragEnd={handleDragEnd}
-      >
+      <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
         <SortableContext
-          items={items.map((i) => i.title)}
+          items={itemsWithIds.map((item) => item.sortableId)}
           strategy={verticalListSortingStrategy}
         >
-          {items.map((item) => (
-            <SortableItem
-              key={item.title}
-              item={item}
-            />
-          ))}
+          <div className="tile-list">
+            {itemsWithIds.map((item) => (
+              <SortableItem
+                key={item.sortableId}
+                id={item.sortableId}
+                item={item}
+              />
+            ))}
+          </div>
         </SortableContext>
       </DndContext>
-    </div>
+    </section>
   );
 }
