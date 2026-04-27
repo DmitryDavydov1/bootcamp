@@ -1,49 +1,38 @@
-export default function Results({data}) {
-    console.log(data);
-    const renderCards = (items, fields) => (
-        <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-            gap: 16
-        }}>
-            {items.map((item, i) => (
-                <div key={i} style={{
-                    border: "1px solid #ddd",
-                    borderRadius: 12,
-                    padding: 16,
-                    boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
-                    background: "#fff"
-                }}>
-                    <h3 style={{fontSize: 16}}>{item.title}</h3>
+import {useEffect, useState} from "react";
+import SortableShelf from "./SortableShelf";
 
-                    {fields.map(f => (
-                        <div key={f} style={{fontSize: 14, marginTop: 4}}>
-                            <b>{f}:</b> {item[f]}
-                        </div>
-                    ))}
-                </div>
-            ))}
-        </div>
-    );
+export default function Results({data}) {
+    const [carousel, setCarousel] = useState([]);
+    const [top10, setTop10] = useState([]);
+    const [hot, setHot] = useState([]);
+
+    useEffect(() => {
+        if (!data) return;
+
+        setCarousel(data.carousel || []);
+        setTop10(data.top10 || []);
+        setHot(data.hot || []);
+    }, [data]);
 
     return (
-        <div style={{padding: 20, background: "#f5f5f5"}}>
+        <div style={{padding: 20}}>
+            <SortableShelf
+                title="Carousel"
+                items={carousel}
+                setItems={setCarousel}
+            />
 
-            <h2>🎠 Carousel</h2>
-            {renderCards(data.carousel, [
-                "ctr_carousel", "views", "bwr", "carousel_score"
-            ])}
+            <SortableShelf
+                title="Top 10"
+                items={top10}
+                setItems={setTop10}
+            />
 
-            <h2 style={{marginTop: 40}}>🏆 Top 10</h2>
-            {renderCards(data.top10, [
-                "views", "depth", "bwr", "top10_score"
-            ])}
-
-            <h2 style={{marginTop: 40}}>🔥 Hot</h2>
-            {renderCards(data.hot, [
-                "ctr_feed", "source_feed", "bwr", "views", "hot_score"
-            ])}
-
+            <SortableShelf
+                title="Hot"
+                items={hot}
+                setItems={setHot}
+            />
         </div>
     );
-}
+}      

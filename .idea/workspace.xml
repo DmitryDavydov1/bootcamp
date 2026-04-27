@@ -5,45 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd132bb-a879-4961-a0af-283cd354de94" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProject3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/data_upload.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/recommendations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/anomalies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/history.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/ratings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/scoring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/shelves.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/schemas/upload.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/dataset_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/recommendation_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/upload_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/storage/uploads/ctr-kinolenta.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/storage/uploads/title-kinolenta.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/eslint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/public/favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/public/icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/src/api/client.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/src/assets/hero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/src/assets/react.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/src/assets/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/src/components/Results.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/src/components/UploadPanel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/src/main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/src/pages/Dashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rec-admin/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/recommendation_engine/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/components/SortableItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rec-admin/src/components/SortableShelf.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/recommendation_engine/anomalies.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recommendation_engine/anomalies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/recommendation_engine/ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recommendation_engine/ratings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/recommendation_engine/scoring.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recommendation_engine/scoring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/recommendation_engine/shelves.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recommendation_engine/shelves.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/api/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/api/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/Results.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/Results.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,23 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "Python.recommendation_service.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "D:/node/node",
-    "settings.editor.selected.configurable": "settings.javascript.runtime",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2026.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recommendation_service.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.runtime&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2026.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\recomendation_system\pythonProject3\src" />
@@ -104,8 +85,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10 (pythonProject)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="true" />
@@ -145,9 +127,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app/api/recommendations.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
