@@ -1,6 +1,8 @@
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 
+const HIDDEN_FIELDS = ["sortableId"];
+
 export default function SortableItem({ id, item }) {
   const {
     attributes,
@@ -22,6 +24,14 @@ export default function SortableItem({ id, item }) {
     item.hot_score ??
     item.rating_score;
 
+  const fields = Object.entries(item).filter(
+    ([key, value]) =>
+      !HIDDEN_FIELDS.includes(key) &&
+      key !== "title" &&
+      value !== undefined &&
+      value !== null
+  );
+
   return (
     <article
       ref={setNodeRef}
@@ -31,31 +41,53 @@ export default function SortableItem({ id, item }) {
       {...listeners}
     >
       <div className="tile-top">
-        <h4>{item.title}</h4>
+        <h4>{item.title || "Без названия"}</h4>
+
         {score !== undefined && (
           <span className="score">{Number(score).toFixed(2)}</span>
         )}
       </div>
 
       <div className="metrics">
-        <Metric label="Views" value={item.views} />
-        <Metric label="CTR carousel" value={item.ctr_carousel} suffix="%" />
-        <Metric label="CTR feed" value={item.ctr_feed} suffix="%" />
-        <Metric label="Depth" value={item.depth} suffix="%" />
-        <Metric label="BWR" value={item.bwr} />
-        <Metric label="Time" value={item.total_time} />
+        {fields.map(([key, value]) => (
+          <Metric key={key} label={formatLabel(key)} value={value} />
+        ))}
       </div>
     </article>
   );
 }
 
-function Metric({ label, value, suffix = "" }) {
-  if (value === undefined || value === null) return null;
-
+function Metric({ label, value }) {
   return (
     <div className="metric">
       <span>{label}</span>
-      <strong>{value}{suffix}</strong>
+      <strong>{formatValue(value)}</strong>
     </div>
   );
+}
+
+function formatLabel(key) {
+  return key
+    .replaceAll("_", " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function formatValue(value) {
+  if (typeof value === "number") {
+    return Number.isInteger(value) ? value : value.toFixed(2);
+  }
+
+  if (typeof value === "boolean") {
+    return value ? "Да" : "Нет";
+  }
+
+  if (Array.isArray(value)) {
+    return value.join(", ");
+  }
+
+  if (typeof value === "object") {
+    return JSON.stringify(value);
+  }
+
+  return String(value);
 }
