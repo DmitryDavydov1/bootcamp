@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import uvicorn
-from app.api import recommendations, data_upload
+from app.api import data_upload, recommendations
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Recommendation System")

@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bd132bb-a879-4961-a0af-283cd354de94" name="Changes" comment="make good interface">
+    <list default="true" id="4bd132bb-a879-4961-a0af-283cd354de94" name="Changes" comment="fix upload">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/data_upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/data_upload.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/upload_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/upload_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rec-admin/src/api/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/api/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/recommendations.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/recommendations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/recommendation_engine/history.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recommendation_engine/history.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/current_top_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/current_top_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/recommendation_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/recommendation_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/storage/uploads/ctr-kinolenta.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/storage/uploads/title-kinolenta.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/Results.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/Results.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rec-admin/src/components/SortableItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/SortableItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/UploadPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/UploadPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/SortableShelf.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/SortableShelf.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +36,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DmitryDavydov1"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DmitryDavydov1&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DmitryDavydov1/bootcamp.git",
-    "accountId": "7e2b7fb6-a3d7-4510-a338-af86d829f7f7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DmitryDavydov1/bootcamp.git&quot;,
+    &quot;accountId&quot;: &quot;7e2b7fb6-a3d7-4510-a338-af86d829f7f7&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -50,32 +59,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.recommendation_service.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.runtime&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2026.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.recommendation_service.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "C:/Users/Student Free/PycharmProjects/bootcamp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.javascript.runtime",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2026.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Student Free\PycharmProjects\bootcamp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Student Free\PycharmProjects\bootcamp" />
+      <recent name="C:\Users\Student Free\PycharmProjects\bootcamp\frontend" />
+      <recent name="C:\Users\Student Free\PycharmProjects\bootcamp\backend\app" />
+      <recent name="C:\Users\Student Free\PycharmProjects\bootcamp\backend" />
       <recent name="C:\Users\user\recomendation_system\pythonProject3\src" />
-      <recent name="C:\Users\user\recomendation_system\pythonProject3\app" />
     </key>
   </component>
   <component name="RunManager">
@@ -95,7 +111,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Student Free\PycharmProjects\bootcamp\backend\app\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777303020339</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix upload">
+      <option name="closed" value="true" />
+      <created>1777365928537</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777365928537</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,13 +198,14 @@
     <MESSAGE value="add generate report" />
     <MESSAGE value="add save top" />
     <MESSAGE value="make good interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="make good interface" />
+    <MESSAGE value="fix upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix upload" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
+          <url>file://$PROJECT_DIR$/app/main.py</url>
           <line>20</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>

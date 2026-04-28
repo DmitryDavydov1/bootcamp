@@ -1,4 +1,5 @@
 import { DndContext, closestCenter } from "@dnd-kit/core";
+
 import {
   SortableContext,
   verticalListSortingStrategy,
@@ -7,51 +8,49 @@ import {
 
 import SortableItem from "./SortableItem";
 
-export default function SortableShelf({ title, items = [], setItems }) {
-  const itemsWithIds = items.map((item, index) => ({
-    ...item,
-    sortableId: `${title}-${index}-${item.title}`,
-  }));
+export default function SortableShelf({ title, description, items, setItems }) {
+  const getItemId = (item, index) => {
+    return item.id || `${title}-${item.title}-${index}`;
+  };
+
+  const itemIds = items.map((item, index) => getItemId(item, index));
 
   const handleDragEnd = (event) => {
     const { active, over } = event;
 
     if (!over || active.id === over.id) return;
 
-    const oldIndex = itemsWithIds.findIndex(
-      (item) => item.sortableId === active.id
-    );
+    const oldIndex = itemIds.findIndex((id) => id === active.id);
+    const newIndex = itemIds.findIndex((id) => id === over.id);
 
-    const newIndex = itemsWithIds.findIndex(
-      (item) => item.sortableId === over.id
-    );
+    if (oldIndex === -1 || newIndex === -1) return;
 
     setItems(arrayMove(items, oldIndex, newIndex));
   };
 
   return (
-    <section className="shelf">
+    <div className="shelf-card">
       <div className="shelf-header">
-        <h3>{title}</h3>
+        <div>
+          <h4>{title}</h4>
+
+          {description && <p className="muted">{description}</p>}
+        </div>
+
         <span>{items.length} items</span>
       </div>
 
       <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
-        <SortableContext
-          items={itemsWithIds.map((item) => item.sortableId)}
-          strategy={verticalListSortingStrategy}
-        >
-          <div className="tile-list">
-            {itemsWithIds.map((item) => (
-              <SortableItem
-                key={item.sortableId}
-                id={item.sortableId}
-                item={item}
-              />
-            ))}
-          </div>
+        <SortableContext items={itemIds} strategy={verticalListSortingStrategy}>
+          {items.map((item, index) => (
+            <SortableItem
+              key={getItemId(item, index)}
+              id={getItemId(item, index)}
+              item={item}
+            />
+          ))}
         </SortableContext>
       </DndContext>
-    </section>
+    </div>
   );
 }

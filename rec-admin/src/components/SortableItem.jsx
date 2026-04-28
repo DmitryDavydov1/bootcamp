@@ -1,93 +1,87 @@
-import {useSortable} from "@dnd-kit/sortable";
-import {CSS} from "@dnd-kit/utilities";
+import { useSortable } from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 
-const HIDDEN_FIELDS = ["sortableId"];
+export default function SortableItem({ id, item }) {
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+  } = useSortable({ id });
 
-export default function SortableItem({id, item}) {
-    const {
-        attributes,
-        listeners,
-        setNodeRef,
-        transform,
-        transition,
-        isDragging,
-    } = useSortable({id});
+  const style = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    padding: "12px",
+    marginBottom: "8px",
+    background: "#fff",
+    border: "1px solid #ddd",
+    borderRadius: "8px",
+    cursor: "grab",
+  };
 
-    const style = {
-        transform: CSS.Transform.toString(transform),
-        transition,
-    };
+  return (
+    <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
+      <strong>{item.title}</strong>
 
-    const score =
-        item.carousel_score ??
-        item.top10_score ??
-        item.hot_score ??
-        item.rating_score;
+      <div className="item-meta">
+        {item.rating !== undefined && (
+          <span>Rating: {item.rating}</span>
+        )}
 
-    const fields = Object.entries(item).filter(
-        ([key, value]) =>
-            !HIDDEN_FIELDS.includes(key) &&
-            key !== "title" &&
-            value !== undefined &&
-            value !== null
-    );
+        {item.views !== undefined && (
+          <span>Views: {item.views}</span>
+        )}
 
-    return (
-        <article
-            ref={setNodeRef}
-            style={style}
-            className={isDragging ? "tile dragging" : "tile"}
-            {...attributes}
-            {...listeners}
-        >
-            <div className="tile-top">
-                <h4>{item.title || "Без названия"}</h4>
+        {item.ctr_carousel !== undefined && (
+          <span>CTR Carousel: {formatNumber(item.ctr_carousel)}%</span>
+        )}
 
-                {score !== undefined && (
-                    <span className="score">{Number(score).toFixed(2)}</span>
-                )}
-            </div>
+        {item.ctr_feed !== undefined && (
+          <span>CTR Feed: {formatNumber(item.ctr_feed)}%</span>
+        )}
 
-            <div className="metrics">
-                {fields.map(([key, value]) => (
-                    <Metric key={key} label={formatLabel(key)} value={value}/>
-                ))}
-            </div>
-        </article>
-    );
+        {item.depth !== undefined && (
+          <span>Depth: {formatNumber(item.depth)}%</span>
+        )}
+
+        {item.bwr !== undefined && (
+          <span>BWR: {formatNumber(item.bwr)}</span>
+        )}
+
+        {item.base_score !== undefined && (
+          <span>Base: {formatNumber(item.base_score)}</span>
+        )}
+
+        {item.rating_score !== undefined && (
+          <span>Rating Score: {formatNumber(item.rating_score)}</span>
+        )}
+
+        {item.carousel_score !== undefined && (
+          <span>Score: {formatNumber(item.carousel_score)}</span>
+        )}
+
+        {item.top10_score !== undefined && (
+          <span>Score: {formatNumber(item.top10_score)}</span>
+        )}
+
+        {item.hot_score !== undefined && (
+          <span>Score: {formatNumber(item.hot_score)}</span>
+        )}
+      </div>
+
+      {item.note && (
+        <p className="item-note">{item.note}</p>
+      )}
+    </div>
+  );
 }
 
-function Metric({label, value}) {
-    return (
-        <div className="metric">
-            <span>{label}</span>
-            <strong>{formatValue(value)}</strong>
-        </div>
-    );
-}
+function formatNumber(value) {
+  if (typeof value !== "number") {
+    return value;
+  }
 
-function formatLabel(key) {
-    return key
-        .replaceAll("_", " ")
-        .replace(/\b\w/g, (char) => char.toUpperCase());
-}
-
-function formatValue(value) {
-    if (typeof value === "number") {
-        return Number.isInteger(value) ? value : value.toFixed(2);
-    }
-
-    if (typeof value === "boolean") {
-        return value ? "Да" : "Нет";
-    }
-
-    if (Array.isArray(value)) {
-        return value.join(", ");
-    }
-
-    if (typeof value === "object") {
-        return JSON.stringify(value);
-    }
-
-    return String(value);
+  return Number.isInteger(value) ? value : value.toFixed(2);
 }
