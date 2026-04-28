@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd132bb-a879-4961-a0af-283cd354de94" name="Changes" comment="make good interface">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/data_upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/data_upload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/upload_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/upload_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/api/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/api/client.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rec-admin/src/components/SortableItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/SortableItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/UploadPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/UploadPanel.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DmitryDavydov1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/DmitryDavydov1/bootcamp.git",
+    "accountId": "7e2b7fb6-a3d7-4510-a338-af86d829f7f7"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -128,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777294669194</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="make good interface">
+      <option name="closed" value="true" />
+      <created>1777303020339</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777303020339</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

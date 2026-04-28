@@ -4,11 +4,18 @@ const api = axios.create({
   baseURL: "http://127.0.0.1:8000",
 });
 
-export const uploadFile = (file) => {
+const createFormData = (file) => {
   const formData = new FormData();
   formData.append("file", file);
+  return formData;
+};
 
-  return api.post("/api/data/upload", formData);
+export const uploadTitleFile = (file) => {
+  return api.post("/api/data/upload-title", createFormData(file));
+};
+
+export const uploadCtrFile = (file) => {
+  return api.post("/api/data/upload-ctr", createFormData(file));
 };
 
 export const generateReport = () => {

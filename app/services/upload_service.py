@@ -1,20 +1,27 @@
 from pathlib import Path
 from datetime import datetime
-import uuid
+import shutil
+
+from fastapi import UploadFile
+
 
 STORAGE_DIR = Path(__file__).parent.parent / "storage" / "uploads"
 STORAGE_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def save_file(file) -> dict:
+def save_file_as(file: UploadFile, target_filename: str) -> dict:
     original_name = file.filename
 
-    safe_name = f"title-kinolenta"
+    if not original_name:
+        raise ValueError("Файл не выбран")
 
-    file_path = STORAGE_DIR / safe_name
+    if not original_name.lower().endswith(".csv"):
+        raise ValueError("Можно загружать только CSV-файлы")
 
-    with open(file_path, "wb") as f:
-        f.write(file.file.read())
+    file_path = STORAGE_DIR / target_filename
+
+    with open(file_path, "wb") as buffer:
+        shutil.copyfileobj(file.file, buffer)
 
     return {
         "filename": original_name,

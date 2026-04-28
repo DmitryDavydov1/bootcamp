@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { uploadFile } from "../api/client";
+import { uploadTitleFile, uploadCtrFile } from "../api/client";
 
 export default function UploadPanel() {
   const [titles, setTitles] = useState(null);
@@ -10,10 +10,21 @@ export default function UploadPanel() {
     try {
       setIsUploading(true);
 
-      if (titles) await uploadFile(titles);
-      if (ctr) await uploadFile(ctr);
+      if (titles) {
+        await uploadTitleFile(titles);
+      }
+
+      if (ctr) {
+        await uploadCtrFile(ctr);
+      }
 
       alert("Файлы загружены");
+    } catch (error) {
+      console.error(error);
+      alert(
+        error.response?.data?.detail ||
+          "Ошибка при загрузке файлов"
+      );
     } finally {
       setIsUploading(false);
     }
@@ -23,7 +34,9 @@ export default function UploadPanel() {
     <section className="panel upload-panel">
       <div>
         <p className="eyebrow">CSV upload</p>
+
         <h3>Загрузка данных</h3>
+
         <p className="muted">
           Добавь файлы с тайтлами и CTR-метриками.
         </p>
@@ -31,22 +44,26 @@ export default function UploadPanel() {
 
       <div className="upload-grid">
         <label className="file-card">
-          <span>Titles CSV</span>
+          <span>Titles CSV → title-kinolenta.csv</span>
+
           <input
             type="file"
             accept=".csv"
             onChange={(e) => setTitles(e.target.files[0])}
           />
+
           <strong>{titles ? titles.name : "Выбрать файл"}</strong>
         </label>
 
         <label className="file-card">
-          <span>CTR CSV</span>
+          <span>CTR CSV → ctr-kinolenta.csv</span>
+
           <input
             type="file"
             accept=".csv"
             onChange={(e) => setCtr(e.target.files[0])}
           />
+
           <strong>{ctr ? ctr.name : "Выбрать файл"}</strong>
         </label>
       </div>
@@ -61,3 +78,5 @@ export default function UploadPanel() {
     </section>
   );
 }
+
+
