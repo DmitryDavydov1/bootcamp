@@ -22,6 +22,7 @@
 
 ```bash
 cd <ПУТЬ_ДО_ПРОЕКТА>
+python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r app/requirements.txt
 python -m uvicorn app.main:app --reload
