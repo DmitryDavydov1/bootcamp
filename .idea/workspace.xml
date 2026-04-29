@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd132bb-a879-4961-a0af-283cd354de94" name="Changes" comment="fix upload">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/recommendations.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/recommendations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/recommendation_engine/history.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recommendation_engine/history.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/current_top_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/current_top_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/recommendation_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/recommendation_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/storage/uploads/ctr-kinolenta.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/storage/uploads/title-kinolenta.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/Results.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/Results.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/SortableItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/SortableItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rec-admin/src/components/SortableShelf.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/components/SortableShelf.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rec-admin/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/rec-admin/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/recommendation_engine/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recommendation_engine/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/recommendation_engine/scoring.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recommendation_engine/scoring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/recommendation_engine/shelves.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recommendation_engine/shelves.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +30,12 @@
     &quot;assignee&quot;: &quot;DmitryDavydov1&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/DmitryDavydov1/bootcamp.git&quot;,
-    &quot;accountId&quot;: &quot;7e2b7fb6-a3d7-4510-a338-af86d829f7f7&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/DmitryDavydov1/bootcamp.git",
+    "accountId": "231bda88-ad59-43e7-bfbd-214ce42141cf"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -59,29 +47,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "Python.recommendation_service.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "C:/Users/Student Free/PycharmProjects/bootcamp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.runtime",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2026.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recommendation_service.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Student Free/PycharmProjects/bootcamp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.runtime&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2026.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Student Free\PycharmProjects\bootcamp" />
@@ -104,7 +92,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10 (pythonProject)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />

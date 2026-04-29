@@ -28,23 +28,23 @@ N_RATING = 20
 
 # Веса формул
 CAROUSEL_WEIGHTS = {
-    "ctr_carousel": 0.35,
-    "views": 0.25,
-    "depth": 0.20,
-    "bwr": 0.20,
+    "ctr_carousel": 0.40,
+    "engagement": 0.30,
+    "retention": 0.15,
+    "views": 0.15,
 }
 
 TOP10_WEIGHTS = {
-    "views": 0.40,
+    "views": 0.35,
     "total_time": 0.30,
-    "depth": 0.20,
-    "bwr": 0.10,
+    "retention": 0.20,
+    "engagement": 0.15,
 }
 
 HOT_WEIGHTS = {
     "ctr_feed": 0.35,
     "source_feed": 0.25,
-    "bwr": 0.25,
+    "engagement": 0.25,
     "views": 0.15,
 }
 

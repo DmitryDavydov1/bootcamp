@@ -2,8 +2,6 @@ import pandas as pd
 
 from app.recommendation_engine.scoring import calc_scores
 from app.recommendation_engine.config import (
-    MIN_CAROUSEL_IMPRESSIONS,
-    MIN_CAROUSEL_IMPRESSIONS_LOW,
     MIN_FEED_IMPRESSIONS,
     MIN_FEED_IMPRESSIONS_LOW,
     MIN_VIEWS_TOP10,
@@ -28,12 +26,12 @@ def build_unique_shelves(df: pd.DataFrame) -> dict:
 
     # ── КАРУСЕЛЬ ─────────────────────────────────────────────────────────────
     lowered_carousel = False
-    df_car = calc_scores(df, carousel_imp_threshold=MIN_CAROUSEL_IMPRESSIONS)
+    df_car = calc_scores(df)
     candidates_car = (df_car[~df_car["title"].isin(used)]
                       .sort_values("carousel_score", ascending=False))
     if len(candidates_car) < MIN_CANDIDATES_CAROUSEL:
         # Снижаем порог показов карусели
-        df_car = calc_scores(df, carousel_imp_threshold=MIN_CAROUSEL_IMPRESSIONS_LOW)
+        df_car = calc_scores(df)
         candidates_car = (df_car[~df_car["title"].isin(used)]
                           .sort_values("carousel_score", ascending=False))
         lowered_carousel = True
